@@ -37,7 +37,7 @@ public class UserRegistrationController {
 		return new ResponseEntity<String>("User Registered",HttpStatus.OK);
 		}
 	}
-	@GetMapping("/login")
+	@GetMapping//("/login")
 	public ResponseEntity<UserRegistration> getUsertById(@RequestBody int code){
 		UserRegistration user=service.getUserById(code);
 		if(user==null) {
